@@ -22,7 +22,7 @@
         >
           <a href="" class="flex items-center">
             <span class="self-center text-2xl font-semibold whitespace-nowrap"
-              > <img src="whole.png" class="self-center text-2xl font-semibold whitespace-nowrap"
+              > <img src="../public/whole.png" class="self-center text-2xl font-semibold whitespace-nowrap"
               ></img</span
             >
           </a>
@@ -98,8 +98,10 @@
               </svg>
             </button>
           </div>
-
-          <div class="flex items-center space-x-4">
+          <button class="text-xs" id="loginButton">
+            Create account, <span  class="text-blue-600 font-semibold text-sm"> It's free</span>
+          </button>
+          <div id="div3"  class="flex items-center space-x-4 hidden">
             <img
               data-modal-target="authentication-modal"
               data-modal-toggle="authentication-modal"
@@ -117,7 +119,7 @@
     <div class="w-full md:min-h-2/3 bg-black">
       <img
         class="opacity-50 md:h-[384px] h-[324px] min-h-full object-cover min-w-full"
-        src="Rectangle 2.png"
+        src="../public/Rectangle 2.png"
         alt=""
         srcset=""
       />
@@ -130,10 +132,18 @@
     </div>
     <div>
       <button
+      id="join"
         type="button"
         class="md:hidden absolute float-left top-6 right-4 border border-slate-300 text-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-6"
       >
         Join Group
+      </button>
+      <button
+      id="leave"
+        type="button"
+        class="md:hidden hidden absolute float-left top-6 right-4 border border-slate-300 text-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-6"
+      >
+        Leave Group
       </button>
     </div>
     <nav class="bg-white w-full border-b border-gray-200">
@@ -146,7 +156,7 @@
             class="hidden font-semibold md:flex bg-gray-300 text-black focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-6"
           >
             Write a Post <img class="w-4 h-4 ml-2"
-            src="baseline-arrow_drop_down-24px.png" alt="" srcset="">
+            src="../public/baseline-arrow_drop_down-24px.png" alt="" srcset="">
           </button>
           
 
@@ -156,7 +166,7 @@
           >
             <img
               class="w-4 h-4 mr-2 "
-              src="baseline-group_add-24px.png"
+              src="../public/baseline-group_add-24px.png"
               alt=""
               srcset=""
               data-modal-target="authentication-modal"
@@ -167,7 +177,7 @@
         </div>
 
         <div
-          class="ml-16 items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          class="ml-12 items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
         >
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-6 md:mt-0 md:border-0 md:bg-white"
@@ -235,7 +245,7 @@
         <div class="mt-4 border-2 border-gray-200 w-full">
           <img
             class="h-[220px] w-full"
-            src="Rectangle 5.png"
+            src="../public/Rectangle 5.png"
             alt=""
             srcset=""
           />
@@ -245,7 +255,7 @@
             <h1 class="mt-2 font-bold">
               What if famous brands had regular fonts? Meet RegulaBrands!
             </h1>
-            <img src="Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
+            <img src="../public/Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
             </div>
             <p class="mt-2 text-slate-600">
               I’ve worked in UX for the better part of a decade. From now on, I
@@ -263,7 +273,7 @@
                 <div>Joeyy Tribbiani</div>
                 
               </div>
-              <img src="Group.png" alt="" srcset=""/>
+              <img src="../public/Group.png" alt="" srcset=""/>
             </div>
             <button
               class="px-4 hidden bg-gray-200 text-sm mt-4 mr-4 items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
@@ -271,14 +281,14 @@
               <h1>Share</h1>
                 
             </button>
-          <img class="" src="Group 2.png" alt="" srcset=""/>
+          <img class="" src="../public/Group 2.png" alt="" srcset=""/>
           </div>
         </div>
 
         <div class="mt-4 border-2 border-gray-200">
           <img
             class="h-[220px] w-full"
-            src="Rectangle 5 (1).png"
+            src="../public/Rectangle 5 (1).png"
             alt=""
             srcset=""
           />
@@ -291,7 +301,7 @@
               by Government
               
             </h1>
- <img src="Group 3 (1).png" alt="" srcset="" class="mx-2 w-7 h-7"/>
+ <img src="../public/Group 3 (1).png" alt="" srcset="" class="mx-2 w-7 h-7"/>
             </div>
             <p class="mt-2 text-slate-600">
               I’ve worked in UX for the better part of a decade. From now on, I
@@ -310,21 +320,21 @@
                
 
               </div>
-               <img src="Group.png" alt="" srcset=""/>
+               <img src="../public/Group.png" alt="" srcset=""/>
             </div>
             <button
               class="px-4 hidden bg-gray-200 text-sm mt-4 mr-4 items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
             >
               Share
             </button>
-             <img class="" src="Group 2.png" alt="" srcset=""/>
+             <img class="" src="../public/Group 2.png" alt="" srcset=""/>
 
           </div>
         </div>
         <div class="mt-4 border-2 border-gray-200">
           <img
             class="h-[220px] w-full"
-            src="Rectangle 5 (2).png"
+            src="../public/Rectangle 5 (2).png"
             alt=""
             srcset=""
           />
@@ -335,7 +345,7 @@
             <h1 class="mt-2 font-bold">
               Finance & Investment Elite Social Mixer @Lujiazui
             </h1>
-            <img src="Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
+            <img src="../public/Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
             </div>
             <p class="mt-2 text-slate-600">
               I’ve worked in UX for the better part of a decade. From now on, I
@@ -352,14 +362,14 @@
               <div class="text-sm">
                 <div>Joeyy Tribbiani</div>
               </div>
-              <img src="Group.png" alt="" srcset=""/>
+              <img src="../public/Group.png" alt="" srcset=""/>
             </div>
             <button
               class="px-4 bg-gray-200 text-sm mt-4 mr-4 hidden items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
             >
               Share
             </button>
-                      <img class="" src="Group 2.png" alt="" srcset=""></img>
+                      <img class="" src="../public/Group 2.png" alt="" srcset=""></img>
 
           </div>
         </div>
@@ -368,7 +378,7 @@
         <div>
           <form>
             <div class="mt-16 ml-8 relative z-0 w-2/3 flex mb-6 group">
-              <img src="outline-location_on-24px 2.png" class="w-8 mt-2 ml-2 mr-1" alt="" srcset="">
+              <img src="../public/outline-location_on-24px 2.png" class="w-8 mt-2 ml-2 mr-1" alt="" srcset="">
               <input
                 type="text"
                 name="floating_email"
@@ -389,13 +399,18 @@
         <div>
           <h2 class="mt-16 mx-4 text-sm">👍 RECOMMENDED GROUPS</h2>
           <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
-            <img class="w-10 h-10 rounded-full" src="Rectangle 6.png" alt="" />
+            <img class="w-10 h-10 rounded-full" src="../public/Rectangle 6.png" alt="" />
             <div
               class="text-sm flex align-middle justify-between w-full text-center items-center"
             >
               <div class="">Leisure</div>
-              <button
-                class="px-4 bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
+               <button id="follow"
+                class="px-4 bg-gray-200 text-xs mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
+              >
+                Follow
+              </button>
+              <button id="followed"
+                class="px-4 bg-black hidden text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
               >
                 Followed
               </button>
@@ -404,58 +419,73 @@
           <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
             <img
               class="w-10 h-10 rounded-full"
-              src="Rectangle 6 (1).png"
+              src="../public/Rectangle 6 (1).png"
               alt=""
             />
             <div
               class="text-sm flex align-middle justify-between w-full text-center items-center"
             >
               <div class="">Activism</div>
-              <button
+              <button id="follow2"
                 class="px-4 bg-gray-200 mr-4 text-xs items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
               >
                 Follow
+              </button>
+               <button id="followed2"
+                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
+              >
+                Followed
               </button>
             </div>
           </div>
           <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
             <img
               class="w-10 h-10 rounded-full"
-              src="Rectangle 6 (2).png"
+              src="../public/Rectangle 6 (2).png"
               alt=""
             />
             <div
               class="text-sm flex align-middle justify-between w-full text-center items-center"
             >
               <div class="">MBA</div>
-              <button
+              <button id="follow3"
                 class="px-4 bg-gray-200 mr-4 text-xs items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
               >
                 Follow
+              </button>
+               <button id="followed3"
+                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
+              >
+                Followed
               </button>
             </div>
           </div>
           <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
             <img
               class="w-10 h-10 rounded-full"
-              src="Rectangle 6 (3).png"
+              src="../public/Rectangle 6 (3).png"
               alt=""
             />
             <div
               class="text-sm flex align-middle justify-between w-full text-center items-center"
             >
               <div class="">Philosophy</div>
-              <button
+              <button id="follow4"
                 class="px-4 bg-gray-200 text-xs mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
               >
                 Follow
+              </button>
+               <button id="followed4"
+                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
+              >
+                Followed
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div id="signupmodal" class="block">
       <!-- Main modal -->
       <div
         id="authentication-modal"
@@ -472,6 +502,7 @@
               type="button"
               class="rounded-sm absolute top-2 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center"
               data-modal-hide="authentication-modal"
+              id="closeButton"
             >
               <svg
                 aria-hidden="true"
@@ -526,7 +557,7 @@
                         <input
                           type="password"
                           name="password"
-                          id="password"
+                          id="password2"
                           placeholder="Password"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                           required
@@ -583,30 +614,30 @@
                         />
                         <span>Sign Up with Google</span>
                       </button>
-                      <p
+                      <!-- <p
                         class="md:hidden text-center justify-center text-xs mb-8 mt-8"
                       >
                         Already have an account?
                         <span>
-                          <a href="siginin.html" class="text-blue-500">
+                          <button id="signinbutton" class="text-blue-500">
                             Sign In</a
-                          ></span
+                          ></button
                         >
-                      </p>
+                      </p> -->
                     </form>
                   </div>
                   <div class="md:w-1/2 hidden md:inline">
                     <p class="text-xs float-right mt-8 pr-8">
                       Already have an account?
                       <span>
-                        <a href="siginin.html" class="text-blue-500">
-                          Sign In</a
+                        <button id="signinbutton"  class="text-blue-500">
+                          Sign In</button
                         ></span
                       >
                     </p>
                     <img
                       class="w-[320px] h-[320px]"
-                      src="Group 3.png"
+                      src="../public/Group 3.png"
                       alt=""
                       srcset=""
                     />
@@ -621,26 +652,304 @@
         </div>
       </div>
     </div>
+        <div id="signinmodal" class="hidden">
+      <!-- Main modal -->
+      <div
+        id="authentication-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="rounded-sm  backdrop-blur-sm fixed flex justify-center items-center z-50 w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100% - 1rem)] max-h-full"
+      >
+        <div
+          class="rounded-sm items-center align-middle relative w-full max-w-3xl max-h-full"
+        >
+          <!-- Modal content -->
+          <div class="flex relative bg-white rounded-sm shadow">
+            
+              <button
+                type="button"
+                class="rounded-sm absolute top-2 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center"
+                data-modal-hide="authentication-modal"
+                id="closeButton2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="sr-only"> Close modal</span>
+              </button>
+          
+            <div class="flex">
+              <div>
+                <div
+                  class="px-12 py-4 bg-green-100 text-xs font-semibold text-green-600"
+                >
+                  Let's learn, share & inspire each other with our passion for
+                  computer engineering. Sign in now 🤘🏼
+                </div>
+                <div class="md:flex">
+                  <div class="md:w-1/2">
+                    <h3 class="px-6 mt-6 mb-4 text-2xl font-bold text-gray-900">
+                      Sign In
+                    </h3>
+                    <form class="px-6" action="#">
+                      <div>
+                        <input
+                          type="email"
+                          name="email"
+                          id="emailsignin"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="password"
+                          name="passwordsignin"
+                          id="password"
+                          placeholder="Password"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="w-full font-semibold mt-6 rounded-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm px-5 py-2.5 text-center"
+                      >
+                        Sign In
+                      </button>
+                      <!-- component -->
+                      <div>
+                        <a
+                          href="#"
+                          class="mt-8 border-2 border-gray-200 flex items-center justify-center w-full px-4 py-2 space-x-3 text-sm text-center rounded-sm"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="blue"
+                            class="bi bi-facebook"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                            />
+                          </svg>
+                          <span class="text-sm text-slate-700"
+                            >Sign In With Facebook</span
+                          ></a
+                        >
+                      </div>
+                      <button
+                        class="px-4 text-sm items-center justify-center gap-2 py-2 mt-4 mb-4 w-full border-2 flex border-slate-200 rounded-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150"
+                      >
+                        <img
+                          class="w-4 h-4"
+                          src="https://www.svgrepo.com/show/475656/google-color.svg"
+                          loading="lazy"
+                          alt="google logo"
+                        />
+                        <span>Sign In with Google</span>
+                      </button>
+                      <p class="text-xs mb-8 text-center font-semibold">
+                        Forgot Password?
+                      </p>
+                    </form>
+                  </div>
+                  <div class=" hidden md:inline md:w-1/2">
+                    <p class="text-xs float-right mt-8 pr-8">
+                      Don’t have an account yet? <button
+                    
+                        class="text-blue-500"
+                       id="signupbutton"
+                      >
+                        Create new for free!</button
+                      >
+                    </p>
+                    <img
+                      class="w-[320px] h-[320px]"
+                      src="../public/Group 3.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div></div>
     <script>
+       let isLoggedIn = false;
+        let isFollowed = false;
       // JavaScript to toggle modal visibility
-      const toggleButton = document.querySelector(
-        '[data-modal-toggle="authentication-modal"]'
-      );
-      const modal = document.querySelector("#authentication-modal");
+function closeModal(){
+    document.getElementById('signinmodal').classList.add('hidden');
+      document.getElementById('signupmodal').classList.add('hidden');
 
-      toggleButton.addEventListener("click", () => {
-        modal.classList.toggle("hidden");
-      });
+}
+     document.getElementById('closeButton').addEventListener('click', closeModal);
+function closeModal2(){
+    document.getElementById('signinmodal').classList.add('hidden');
+    document.getElementById('signupmodal').classList.add('hidden');
 
-      const hideButtons = document.querySelectorAll(
-        '[data-modal-hide="authentication-modal"]'
-      );
-      hideButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          modal.classList.add("hidden");
-        });
-      });
+}
+     document.getElementById('closeButton2').addEventListener('click', closeModal2);
+
+// Function to handle the click event
+function handleLogin() {
+  isLoggedIn = true;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('loginButton').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('div3').classList.remove('hidden');
+
+}
+
+// Add event listener to the login button or element
+     document.getElementById('loginButton').addEventListener('click', handleLogin);
+function handleFollow() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed').classList.remove('hidden');
+
+}
+     document.getElementById('follow').addEventListener('click', handleFollow);
+     function handleGroup() {
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('join').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('leave').classList.remove('hidden');
+
+}
+     document.getElementById('join').addEventListener('click', handleGroup);
+     function handleFollow2() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow2').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed2').classList.remove('hidden');
+
+}
+          document.getElementById('follow2').addEventListener('click', handleFollow2);
+          function handleFollow3() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow3').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed3').classList.remove('hidden');
+
+}
+                    document.getElementById('follow3').addEventListener('click', handleFollow3);
+
+function handleFollow4() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow4').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed4').classList.remove('hidden');
+
+}
+                    document.getElementById('follow4').addEventListener('click', handleFollow4);
+
+
+     function handleFollowed() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow').classList.remove('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed').classList.add('hidden');
+
+}
+     document.getElementById('followed').addEventListener('click', handleFollowed);
+     function handleGrouped() {
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('leave').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('join').classList.remove('hidden');
+
+}
+     document.getElementById('leave').addEventListener('click', handleGrouped);
+          function handleFollowed2() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow2').classList.remove('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed2').classList.add('hidden');
+
+}
+     document.getElementById('followed2').addEventListener('click', handleFollowed2);
+          function handleFollowed3() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow3').classList.remove('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed3').classList.add('hidden');
+
+}
+     document.getElementById('followed3').addEventListener('click', handleFollowed3);
+ function handleFollowed4() {
+  isFollowed = !isFollowed;
+  
+  // Apply Tailwind CSS classes for logged-in users
+  document.getElementById('follow4').classList.remove('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('followed4').classList.add('hidden');
+
+}
+     document.getElementById('followed4').addEventListener('click', handleFollowed4);
+
+function handleSignIn(){
+    document.getElementById('signinmodal').classList.remove('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('signupmodal').classList.add('hidden');
+}
+       document.getElementById('signinbutton').addEventListener('click', handleSignIn);
+
+function handleSignUp(){
+    document.getElementById('signinmodal').classList.add('hidden');
+  
+  // Remove Tailwind CSS class for non-logged-in users
+  document.getElementById('signupmodal').classList.remove('hidden');
+}
+       document.getElementById('signupbutton').addEventListener('click', handleSignUp);
     </script>
   </body>
 </html>
