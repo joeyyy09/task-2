@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="/output.css" />
 
+    <link rel="stylesheet" type="text/css" href="glider.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,786 +15,353 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white">
-    <div class="justify-between bg-white">
-      <nav class="bg-white border-gray-200 hidden md:inline">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ml-4 mr-4 mt-4 mb-4"
-        >
-          <a href="" class="flex items-center">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap"
-              > <img src="../src/whole.png" class="self-center text-2xl font-semibold whitespace-nowrap"
-              ></img</span
-            >
-          </a>
-          <div class="flex items-center align-middle">
-            <button
-              type="button"
-              data-collapse-toggle="navbar-search"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-              class="md:hidden min-w-full text-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-3.5 mr-1"
-            >
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="sr-only">Search</span>
-            </button>
-            <div class="relative hidden md:block">
-              <div
-                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-500"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="sr-only">Search icon</span>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="w-96 p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-3xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Search for your favourite groups in ATG"
-              />
-            </div>
-            <button
-              data-collapse-toggle="navbar-search"
-              type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <button class="text-xs" id="loginButton">
-            Create account, <span  class="text-blue-600 font-semibold text-sm"> It's free</span>
-          </button>
-          <div id="div3"  class="flex items-center space-x-4 hidden">
+  <body class="w-full">
+    <div class="glider-contain multiple max-h-screen md:hidden">
+      <div class="glider">
+        <!-- main div mobile view -->
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-indigo-950 flex h-[450px]">
             <img
-              data-modal-target="authentication-modal"
-              data-modal-toggle="authentication-modal"
-              class="w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/736x/ea/30/a3/ea30a3d2fcb9a89db0f3b6e522f56360.jpg"
-              alt=""
-            />
-            <div class="text-sm">
-              <div><h1>Joeyy Tribbiani</h1></div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="w-full md:min-h-2/3 bg-black">
-      <img
-        class="opacity-50 md:h-[384px] h-[324px] min-h-full object-cover min-w-full"
-        src="../src/Rectangle 2.png"
-        alt=""
-        srcset=""
-      />
-    </div>
-    <div class="absolute ml-4 md:ml-20 -mt-20 md:-mt-36 z-10 text-white">
-      <h1 class="sm:text-2xl text-2xl md:text-5xl text-white">
-        Computer Engineering
-      </h1>
-      <h3 class="text-xs md:text-xl">142,765 Computer Engineers follow this</h3>
-    </div>
-    <div>
-      <button
-      id="join"
-        type="button"
-        class="md:hidden absolute float-left top-6 right-4 border border-slate-300 text-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-6"
-      >
-        Join Group
-      </button>
-      <button
-      id="leave"
-        type="button"
-        class="md:hidden hidden absolute float-left top-6 right-4 border border-slate-300 text-slate-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-6"
-      >
-        Leave Group
-      </button>
-    </div>
-    <nav class="bg-white w-full border-b border-gray-200">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:m-4"
-      >
-        <div class="flex md:order-2">
-          <button
-            type="button"
-            class="hidden font-semibold md:flex bg-gray-300 text-black focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center mr-4"
-          >
-            Write a Post <img class="w-4 h-4 ml-2"
-            src="../src/baseline-arrow_drop_down-24px.png" alt="" srcset="">
-          </button>
-          
-
-          <button
-            type="button"
-            class="hidden md:flex font-semibold text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-sm text-sm px-4 py-2 text-center"
-          >
-            <img
-              class="w-4 h-4 mr-2 "
-              src="../src/baseline-group_add-24px.png"
+              class="pt-36 w-1/2 h-auto"
+              src="src/veme-blockchain-app-developed.png"
               alt=""
               srcset=""
-              data-modal-target="authentication-modal"
-              data-modal-toggle="authentication-modal"
             />
-            Join Group
-          </button>
-        </div>
-
-        <div
-          class="ml-12 items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        >
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-6 md:mt-0 md:border-0 md:bg-white"
+            <img
+              class="pl-4 pb-36 h-auto w-1/2"
+              src="src/veme-app-ui-design.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- bottom div -->
+          <div
+            class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 h-screen"
           >
-            <li>
-              <a
-                href="#"
-                class="hidden md:block py-2 pl-4 pr-6 text-sm text-black rounded md:bg-transparent md:p-0"
-                aria-current="page"
-                >All Posts (32)</a
+            <h1 class="pt-20 ml-4 text-white text-4xl">ABC 1</h1>
+            <p class="mt-8 ml-4 text-white text-xl">
+              This is a sample text for ABC1
+            </p>
+            <div class="flex items-center mt-14 ml-4 pb-20">
+              <p class="text-white text-xl">CASE STUDY</p>
+              <button
+                class="ml-6 bg-white text-blue-900 font-bold py-2 px-4 rounded-full"
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-4 pr-6 text-sm text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                >Article</a
+                Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-blue-900 flex h-[450px] min-w-screen">
+            <img
+              class="pt-36 w-1/2 h-auto"
+              src="src/whole.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="pl-6 pb-36 h-auto w-1/2"
+              src="src/measure-total-body-weight-through-fitness-app.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- bottom div -->
+          <div class="bg-blue-950 h-screen w-screen">
+            <h1 class="pt-20 ml-4 text-white text-4xl">ABC 2</h1>
+            <p class="mt-8 ml-4 text-white text-xl">
+              This is a sample text for ABC2
+            </p>
+            <div class="flex mt-14 items-center ml-4 pb-20">
+              <p class="text-white text-xl">CASE STUDY</p>
+              <button
+                class="ml-6 bg-white text-blue-900 font-bold py-2 px-4 rounded-full"
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-sm text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                >Event</a
+                Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- main div mobile view -->
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-blue-900 flex h-[450px] w-screen">
+            <img class="w-full h-full" src="src/sc3.png" alt="" srcset="" />
+          </div>
+          <!-- bottom div -->
+          <div class="bg-blue-950 h-screen">
+            <h1 class="pt-20 ml-4 text-white text-4xl">ABC 3</h1>
+            <p class="mt-8 ml-4 text-white text-xl">
+              This is a sample text for ABC3
+            </p>
+            <div class="flex ml-6 mt-14 pb-32">
+              <p class="text-white text-xl">View Case Study -></p>
+            </div>
+          </div>
+        </div>
+        <!-- main div mobile view -->
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-blue-900 flex h-[450px]">
+            <img class="" src="src/sc4.png" alt="" srcset="" />
+          </div>
+          <!-- bottom div -->
+          <div class="bg-blue-600 h-screen">
+            <h1 class="pt-20 ml-4 text-white text-4xl">ABC 4</h1>
+            <p class="mt-8 ml-4 text-white text-xl">
+              This is a sample text for ABC4
+            </p>
+            <div class="flex mt-14 ml-6 pb-32">
+              <p class="text-white text-xl">View Case Study -></p>
+            </div>
+          </div>
+        </div>
+        <!-- main div mobile view -->
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-blue-900 flex h-[450px]">
+            <img class="" src="src/sc41.png" alt="" srcset="" />
+          </div>
+          <!-- bottom div -->
+          <div class="bg-blue-800 h-screen">
+            <h1 class="pt-20 ml-4 text-white text-4xl">ABC 4</h1>
+            <p class="mt-8 ml-4 text-white text-xl">
+              This is a sample text for ABC4
+            </p>
+            <div class="flex ml-6 mt-14 pb-20">
+              <p class="text-white text-xl">View Case Study -></p>
+            </div>
+          </div>
+        </div>
+        <!-- main div mobile view -->
+        <div class="md:hidden max-h-screen">
+          <!-- top div -->
+          <div class="bg-blue-900 flex h-[450px]">
+            <img
+              class="pt-36 w-1/2 h-auto"
+              src="src/whole.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="pl-4 pb-36 h-auto w-1/2"
+              src="src/measure-total-body-weight-through-fitness-app.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- bottom div -->
+          <div class="bg-blue-950 pl-4 h-screen">
+            <h1 class="pt-20 text-white text-4xl">ABC 2</h1>
+            <p class="mt-8 text-white text-xl">
+              This is a sample text for ABC2
+            </p>
+            <div class="flex items-center mt-14 pb-20">
+              <p class="text-white text-xl">CASE STUDY</p>
+              <button
+                class="ml-6 bg-white text-blue-900 font-bold py-2 px-4 rounded-full"
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-sm text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                >Education</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-sm text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                >Job</a
-              >
-            </li>
-          </ul>
+                Coming Soon
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <div>
-      <div class="md:hidden flex justify-between">
-        <p class="font-semibold text-sm text-slate-700 mt-6 ml-2">Posts(368)</p>
+      <div id="dots" class="glider-dots -translate-y-8"></div>
+    </div>
+
+    <!-- for desktop view -->
+    <div class="">
+      <div class="md:flex hidden min-h-screen ">
+        <div class="bg-violet-800 w-1/2 pt-96 px-8 ">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 234</h1>
+          <p class="mt-6 text-white text-md">
+            We are the best <br />
+            web development company <br />
+            in the world.
+          </p>
+          <h1 class="float-right text-white">Skip</h1>
+          <h1 class="text-gray-600 mt-8">Coming Soon.</h1>
+        </div>
+        <div class="bg-indigo-800 w-1/2 flex">
+          <img
+            class="w-80 h-80 bg-violet-800 rounded-full -translate-x-40 translate-y-20"
+            src="src/svg with paths.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute -translate-x-56 translate-y-44 mt-4 text-white">
+            <h1 class="text-xl">The Next Big</h1>
+            <h1 class="text-6xl">Blockchain</h1>
+            <p class="mt-2 float-right text-xl">Revolution.</p>
+          </div>
+          <img
+            class="w-[280px] h-[350px] -ml-48 translate-y-96"
+            src="src/22.png"
+            alt=""
+          />
+          <img
+            class="w-[240px] h-[350px]"
+            src="src/veme-app-ui-design.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="md:flex hidden min-h-screen">
+        <div class="bg-blue-950 w-1/2 pt-96 px-8">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 345</h1>
+          <p class="mt-6 text-white text-md">
+            We are the best <br />
+            web development company <br />
+            in the world.
+          </p>
+          <h1 class="float-right text-white">Skip</h1>
+          <h1 class="text-gray-600 mt-8">Coming Soon.</h1>
+        </div>
+        <div class="bg-blue-900 w-1/2 flex">
+          <img
+            class="w-80 h-80 bg-blue-950 rounded-full -translate-x-40 translate-y-20"
+            src="src/svg with paths.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute -translate-x-48 translate-y-40 mt-4 text-white">
+            <h1 class="font-">Powered by advance</h1>
+            <img class="mt-2" src="src/nasa-mobile-app.png" alt="" />
+            <p class="mt-2 float-right">algorithms.</p>
+          </div>
+          <img
+            class="w-[240px] h-[550px] pt-28 -ml-32"
+            src="src/nasa-fitness-tracking-mobile-app.png"
+            alt=""
+          />
+          <img
+            class="w-[260px] h-[350px]"
+            src="src/measure-total-body-weight-through-fitness-app.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="md:flex hidden min-h-screen">
+        <div class="bg-sky-950 w-1/2 pt-96 px-8">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 456</h1>
+          <p class="mt-6 text-white text-md">
+            We are the best <br />
+            web development company <br />
+            in the world.
+          </p>
+          <h1 class="float-right text-white">Skip</h1>
+          <h1 class="text-gray-600 mt-8">Coming Soon.</h1>
+        </div>
+        <div class="bg-blue-900 w-1/2 flex">
+          <img
+            class="w-80 h-80 bg-sky-950 rounded-full -translate-x-40 translate-y-20"
+            src="src/svg with paths.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute -translate-x-48 translate-y-44 mt-4 text-white">
+            <h1 class="text-xl">Redefining</h1>
+            <h1 class="text-5xl">UX Strategy</h1>
+            <p class="mt-2 text-xl float-right">and UI Design.</p>
+          </div>
+          <!-- <img
+            class="w-[240px] h-[550px] pt-24 -ml-32"
+            src="src/nasa-fitness-tracking-mobile-app.png"
+            alt=""
+          />
+          <img
+            class="w-[240px] h-[350px]"
+            src="src/measure-total-body-weight-through-fitness-app.png"
+            alt=""
+            srcset=""
+          /> -->
+          <img src="src/sc3.png" class="object-cover -ml-80" alt="">
+        </div> 
+
         <button
-          class="px-4 bg-gray-200 font-semibold text-sm mt-4 mr-4 items-center justify-center py-1 md:py-2 md:w-full border-2 flex border-slate-200 rounded-sm text-slate-700"
+          class="fixed z-90 bottom-10 right-8 bg-blue-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
         >
-          Filter:All
-          <span></span>
+          &#9993;
         </button>
       </div>
-    </div>
-    <button
-      
-      title="Contact Sale"
-      class="md:hidden fixed z-90 bottom-8 right-8 bg-pink-500 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white"
-    >
-      +
-    </button>
-    <div class="md:ml-24 ml-0 flex">
-      <div>
-        <div class="mt-4 border-2 border-gray-200 w-full">
-          <img
-            class="h-[220px] w-full"
-            src="../src/Rectangle 5.png"
-            alt=""
-            srcset=""
-          />
-          <div class="px-4">
-            <p class="mt-4 font-medium">🖊️ Article</p>
-            <div class="flex justify-between">
-            <h1 class="mt-2 font-bold">
-              What if famous brands had regular fonts? Meet RegulaBrands!
-            </h1>
-            <img src="../src/Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
-            </div>
-            <p class="mt-2 text-slate-600">
-              I’ve worked in UX for the better part of a decade. From now on, I
-              plan to rei…
-            </p>
-          </div>
-          <div class="flex items-center space-x-4 mt-4 px-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/736x/ea/30/a3/ea30a3d2fcb9a89db0f3b6e522f56360.jpg"
-              alt=""
-            />
-            <div class="flex justify-between w-full">
-              <div class="text-sm">
-                <div>Joeyy Tribbiani</div>
-                
-              </div>
-              <img src="../src/Group.png" alt="" srcset=""/>
-            </div>
-            <button
-              class="px-4 hidden bg-gray-200 text-sm mt-4 mr-4 items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
-            >
-              <h1>Share</h1>
-                
-            </button>
-          <img class="" src="../src/Group 2.png" alt="" srcset=""/>
-          </div>
-        </div>
-
-        <div class="mt-4 border-2 border-gray-200">
-          <img
-            class="h-[220px] w-full"
-            src="../src/Rectangle 5 (1).png"
-            alt=""
-            srcset=""
-          />
-          <div class="px-4">
-            <p class="mt-4 font-medium">🖊️ Education</p>
-                        <div class="flex justify-between">
-
-            <h1 class="mt-2 font-bold">
-              Tax Benefits for Investment under National Pension Scheme launched
-              by Government
-              
-            </h1>
- <img src="../src/Group 3 (1).png" alt="" srcset="" class="mx-2 w-7 h-7"/>
-            </div>
-            <p class="mt-2 text-slate-600">
-              I’ve worked in UX for the better part of a decade. From now on, I
-              plan to rei…
-            </p>
-          </div>
-          <div class="flex items-center space-x-4 mt-4 px-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/736x/ea/30/a3/ea30a3d2fcb9a89db0f3b6e522f56360.jpg"
-              alt=""
-            />
-            <div class="flex justify-between w-full">
-              <div class="text-sm">
-                <div>Joeyy Tribbiani</div>
-               
-
-              </div>
-               <img src="../src/Group.png" alt="" srcset=""/>
-            </div>
-            <button
-              class="px-4 hidden bg-gray-200 text-sm mt-4 mr-4 items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
-            >
-              Share
-            </button>
-             <img class="" src="../src/Group 2.png" alt="" srcset=""/>
-
-          </div>
-        </div>
-        <div class="mt-4 border-2 border-gray-200">
-          <img
-            class="h-[220px] w-full"
-            src="../src/Rectangle 5 (2).png"
-            alt=""
-            srcset=""
-          />
-          <div class="px-4">
-            <p class="mt-4 font-medium">🖊️ Meetup</p>
-                        <div class="flex justify-between">
-
-            <h1 class="mt-2 font-bold">
-              Finance & Investment Elite Social Mixer @Lujiazui
-            </h1>
-            <img src="../src/Group 3 (1).png" alt="" srcset="" class=" mx-2 w-7 h-7"/>
-            </div>
-            <p class="mt-2 text-slate-600">
-              I’ve worked in UX for the better part of a decade. From now on, I
-              plan to rei…
-            </p>
-          </div>
-          <div class="flex items-center space-x-4 mt-4 px-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/736x/ea/30/a3/ea30a3d2fcb9a89db0f3b6e522f56360.jpg"
-              alt=""
-            />
-            <div class="flex justify-between w-full">
-              <div class="text-sm">
-                <div>Joeyy Tribbiani</div>
-              </div>
-              <img src="../src/Group.png" alt="" srcset=""/>
-            </div>
-            <button
-              class="px-4 bg-gray-200 text-sm mt-4 mr-4 hidden items-center justify-center py-1 md:py-2 border-2 border-slate-200 rounded-sm text-slate-700"
-            >
-              Share
-            </button>
-                      <img class="" src="../src/Group 2.png" alt="" srcset=""></img>
-
-          </div>
-        </div>
-      </div>
-      <div class="ml-4 hidden md:inline">
-        <div>
-          <form>
-            <div class="mt-16 ml-8 relative z-0 w-2/3 flex mb-6 group">
-              <img src="../src/outline-location_on-24px 2.png" class="w-8 mt-2 ml-2 mr-1" alt="" srcset="">
-              <input
-                type="text"
-                name="floating_email"
-                id="floating_email"
-                class="block py-2.5 px-0 w-full text-xs text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none peer"
-                placeholder="Enter your location "
-                required
-              />
-            </div>
-          </form>
-        </div>
-        <div>
-          <p class="mx-8 text-gray-400 text-xs mt-8">
-            Your location will help us serve better and extend a personalised
-            experience.
+      <div class="md:flex hidden min-h-screen">
+        <div class="bg-sky-700 w-1/2 pt-96 px-8">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 567</h1>
+          <p class="mt-6 text-white text-md">
+            We are the best AR <br />
+            Development company <br />
+            in the world.
           </p>
-        </div>
-        <div>
-          <h2 class="mt-16 mx-4 text-sm">👍 RECOMMENDED GROUPS</h2>
-          <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
-            <img class="w-10 h-10 rounded-full" src="../src/Rectangle 6.png" alt="" />
-            <div
-              class="text-sm flex align-middle justify-between w-full text-center items-center"
-            >
-              <div class="">Leisure</div>
-               <button id="follow"
-                class="px-4 bg-gray-200 text-xs mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
-              >
-                Follow
-              </button>
-              <button id="followed"
-                class="px-4 bg-black hidden text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
-              >
-                Followed
-              </button>
-            </div>
-          </div>
-          <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="../src/Rectangle 6 (1).png"
-              alt=""
-            />
-            <div
-              class="text-sm flex align-middle justify-between w-full text-center items-center"
-            >
-              <div class="">Activism</div>
-              <button id="follow2"
-                class="px-4 bg-gray-200 mr-4 text-xs items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
-              >
-                Follow
-              </button>
-               <button id="followed2"
-                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
-              >
-                Followed
-              </button>
-            </div>
-          </div>
-          <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="../src/Rectangle 6 (2).png"
-              alt=""
-            />
-            <div
-              class="text-sm flex align-middle justify-between w-full text-center items-center"
-            >
-              <div class="">MBA</div>
-              <button id="follow3"
-                class="px-4 bg-gray-200 mr-4 text-xs items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
-              >
-                Follow
-              </button>
-               <button id="followed3"
-                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
-              >
-                Followed
-              </button>
-            </div>
-          </div>
-          <div class="ml-4 flex items-center space-x-4 mt-4 mb-6">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="../src/Rectangle 6 (3).png"
-              alt=""
-            />
-            <div
-              class="text-sm flex align-middle justify-between w-full text-center items-center"
-            >
-              <div class="">Philosophy</div>
-              <button id="follow4"
-                class="px-4 bg-gray-200 text-xs mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full text-slate-700"
-              >
-                Follow
-              </button>
-               <button id="followed4"
-                class="px-4 hidden bg-black text-xs text-white mr-4 items-center justify-center py-1 md:py-2 border-2 flex border-slate-200 rounded-full"
-              >
-                Followed
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="signupmodal" class="block">
-      <!-- Main modal -->
-      <div
-        id="authentication-modal"
-        tabindex="-1"
-        aria-hidden="true"
-        class="rounded-sm backdrop-blur-sm fixed flex justify-center items-center z-50 w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100% - 1rem)] max-h-full"
-      >
-        <div
-          class="rounded-sm items-center align-middle relative w-full max-w-3xl max-h-full"
-        >
-          <!-- Modal content -->
-          <div class="flex relative bg-white rounded-sm shadow">
-            <button
-              type="button"
-              class="rounded-sm absolute top-2 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center"
-              data-modal-hide="authentication-modal"
-              id="closeButton"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="sr-only">Close modal</span>
-            </button>
-            <div class="flex">
-              <div>
-                <div
-                  class="px-12 py-4 bg-green-100 text-xs font-semibold text-green-600"
-                >
-                  Let's learn, share & inspire each other with our passion for
-                  computer engineering. Sign up now 🤘🏼
-                </div>
-                <div class="md:flex">
-                  <div class="md:w-1/2 w-full">
-                    <h3 class="px-6 mt-6 mb-4 text-2xl font-bold text-gray-900">
-                      Create Account
-                    </h3>
-                    <form class="px-6" action="#">
-                      <div>
-                        <input
-                          type="text"
-                          name="email"
-                          id="name"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          placeholder="Name"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          placeholder="Email"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <input
-                          type="password"
-                          name="password"
-                          id="password2"
-                          placeholder="Password"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <input
-                          type="password"
-                          name="password"
-                          id="confirm-password"
-                          placeholder="Confirm Password"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          required
-                        />
-                      </div>
 
-                      <button
-                        type="submit"
-                        class="w-full mt-6 rounded-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center"
-                      >
-                        Create Account
-                      </button>
-                      <!-- component -->
-                      <div>
-                        <a
-                          href="#"
-                          class="mt-8 border-2 border-gray-200 flex items-center justify-center w-full px-4 py-2 space-x-3 text-sm text-center rounded-sm"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="blue"
-                            class="bi bi-facebook"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                            />
-                          </svg>
-                          <span class="text-sm text-slate-700"
-                            >Sign Up With Facebook</span
-                          ></a
-                        >
-                      </div>
-                      <button
-                        class="px-4 text-sm items-center justify-center gap-2 py-2 mt-4 mb-4 w-full border-2 flex border-slate-200 rounded-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150"
-                      >
-                        <img
-                          class="w-4 h-4"
-                          src="https://www.svgrepo.com/show/475656/google-color.svg"
-                          loading="lazy"
-                          alt="google logo"
-                        />
-                        <span>Sign Up with Google</span>
-                      </button>
-                      <!-- <p
-                        class="md:hidden text-center justify-center text-xs mb-8 mt-8"
-                      >
-                        Already have an account?
-                        <span>
-                          <button id="signinbutton" class="text-blue-500">
-                            Sign In</a
-                          ></button
-                        >
-                      </p> -->
-                    </form>
-                  </div>
-                  <div class="md:w-1/2 hidden md:inline">
-                    <p class="text-xs float-right mt-8 pr-8">
-                      Already have an account?
-                      <span>
-                        <button id="signinbutton"  class="text-blue-500">
-                          Sign In</button
-                        ></span
-                      >
-                    </p>
-                    <img
-                      class="w-[320px] h-[320px]"
-                      src="../src/Group 3.png"
-                      alt=""
-                      srcset=""
-                    />
-                    <p class="text-xs mb-8 text-center text-gray-500">
-                      By signing up, you agree to our Terms & conditions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h1 class="text-white mt-8">View Case Study-></h1>
+          <h1 class="float-right text-white">Skip</h1>
+        </div>
+        <div class="bg-blue-800 w-1/2 flex">
+          <img
+            class="w-80 h-80 bg-sky-700 rounded-full -translate-x-40 translate-y-20"
+            src="src/svg with paths.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute -translate-x-72 translate-y-40 mt-4 text-white">
+            <h1 class="text-xl">Text Headline</h1>
+            <h1 class="text-6xl">Text Headline</h1>
+            <p class="mt-2 text-xl float-right">Footer headline.</p>
           </div>
+          <img class="w-full object-cover -ml-80" src="src/sc4.png" alt="" />
+        </div>
+      </div>
+      <div class="md:flex hidden min-h-screen">
+        <div class="bg-blue-800 w-1/2 pt-96 px-8">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 678</h1>
+          <p class="mt-6 text-white text-md">
+            Best since 2017 <br />
+            We offer wide range of <br />
+            web development and app development.
+          </p>
+
+          <h1 class="text-white mt-8">View Case Study-></h1>
+          <h1 class="float-right text-white">Skip</h1>
+        </div>
+        <div class="bg-blue-800 w-1/2 flex">
+          <img
+            class="w-80 h-80 bg-blue-800 rounded-full -translate-x-40 translate-y-20"
+            src="src/svg with paths.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="absolute -translate-x-72 translate-y-40 mt-4 text-white">
+            <h1 class="text-xl">Developing ERP Solution for</h1>
+            <h1 class="text-6xl">Text Headline</h1>
+            <p class="mt-2 text-xl float-right">in furniture industry.</p>
+          </div>
+          <img class="w-full object-cover -ml-80" src="src/sc41.png" alt="" />
         </div>
       </div>
     </div>
-        <div id="signinmodal" class="hidden">
-      <!-- Main modal -->
-      <div
-        id="authentication-modal"
-        tabindex="-1"
-        aria-hidden="true"
-        class="rounded-sm  backdrop-blur-sm fixed flex justify-center items-center z-50 w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100% - 1rem)] max-h-full"
-      >
-        <div
-          class="rounded-sm items-center align-middle relative w-full max-w-3xl max-h-full"
-        >
-          <!-- Modal content -->
-          <div class="flex relative bg-white rounded-sm shadow">
-            
-              <button
-                type="button"
-                class="rounded-sm absolute top-2 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center"
-                data-modal-hide="authentication-modal"
-                id="closeButton2"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="sr-only"> Close modal</span>
-              </button>
-          
-            <div class="flex">
-              <div>
-                <div
-                  class="px-12 py-4 bg-green-100 text-xs font-semibold text-green-600"
-                >
-                  Let's learn, share & inspire each other with our passion for
-                  computer engineering. Sign in now 🤘🏼
-                </div>
-                <div class="md:flex">
-                  <div class="md:w-1/2">
-                    <h3 class="px-6 mt-6 mb-4 text-2xl font-bold text-gray-900">
-                      Sign In
-                    </h3>
-                    <form class="px-6" action="#">
-                      <div>
-                        <input
-                          type="email"
-                          name="email"
-                          id="emailsignin"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          placeholder="Email"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <input
-                          type="password"
-                          name="passwordsignin"
-                          id="password"
-                          placeholder="Password"
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                          required
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        class="w-full font-semibold mt-6 rounded-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm px-5 py-2.5 text-center"
-                      >
-                        Sign In
-                      </button>
-                      <!-- component -->
-                      <div>
-                        <a
-                          href="#"
-                          class="mt-8 border-2 border-gray-200 flex items-center justify-center w-full px-4 py-2 space-x-3 text-sm text-center rounded-sm"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="blue"
-                            class="bi bi-facebook"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                            />
-                          </svg>
-                          <span class="text-sm text-slate-700"
-                            >Sign In With Facebook</span
-                          ></a
-                        >
-                      </div>
-                      <button
-                        class="px-4 text-sm items-center justify-center gap-2 py-2 mt-4 mb-4 w-full border-2 flex border-slate-200 rounded-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150"
-                      >
-                        <img
-                          class="w-4 h-4"
-                          src="https://www.svgrepo.com/show/475656/google-color.svg"
-                          loading="lazy"
-                          alt="google logo"
-                        />
-                        <span>Sign In with Google</span>
-                      </button>
-                      <p class="text-xs mb-8 text-center font-semibold">
-                        Forgot Password?
-                      </p>
-                    </form>
-                  </div>
-                  <div class=" hidden md:inline md:w-1/2">
-                    <p class="text-xs float-right mt-8 pr-8">
-                      Don’t have an account yet? <button
-                    
-                        class="text-blue-500"
-                       id="signupbutton"
-                      >
-                        Create new for free!</button
-                      >
-                    </p>
-                    <img
-                      class="w-[320px] h-[320px]"
-                      src="../src/Group 3.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div></div>
-    <script src="script.js">
-     
+    <script src="script.js"></script>
+    <script src="glider.min.js"></script>
+    <script>
+      
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: "#dots",
+        draggable: false,
+        rewind: true,
+        resizeLock: true,
+        scrollLock: true,
+        autoplay: true,
+        scrollPropagate: true,
+        duration: 0.5, // Adjust the duration as needed
+        autoplay: 1000, // Adjust the autoplay interval as needed
+      });
     </script>
   </body>
 </html>
