@@ -176,8 +176,8 @@
     <!-- for desktop view -->
     <div class="">
       <div class="md:flex hidden min-h-screen">
-        <div class="bg-violet-800  w-1/2 pt-96 px-8">
-          <h1 class="pt-20  text-white font-bold text-5xl">ABC 234</h1>
+        <div class="bg-violet-800 w-1/2 pt-96 px-8">
+          <h1 class="pt-20 text-white font-bold text-5xl">ABC 234</h1>
           <p class="mt-6 text-white text-md">
             We are the best <br />
             web development company <br />
@@ -372,13 +372,26 @@
 
       var index = 0;
       var buttons = document.querySelectorAll("#dots button[data-index]");
+      var isPaused = false;
 
       function clickNextButton() {
-        buttons[index].click();
-        index = (index + 1) % buttons.length;
+        if (!isPaused) {
+          buttons[index].click();
+          index = (index + 1) % buttons.length;
+        }
       }
 
       setInterval(clickNextButton, 2000); // 2000 milliseconds = 2 seconds
+
+      function pauseAutomaticClicks() {
+        isPaused = true;
+        setTimeout(function () {
+          isPaused = false;
+        }, 5000); // 5000 milliseconds = 5 seconds
+      }
+
+      window.addEventListener("touchstart", pauseAutomaticClicks);
+      window.addEventListener("mousedown", pauseAutomaticClicks);
     </script>
   </body>
 </html>
