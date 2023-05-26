@@ -175,9 +175,9 @@
 
     <!-- for desktop view -->
     <div class="">
-      <div class="md:flex hidden min-h-screen ">
-        <div class="bg-violet-800 w-1/2 pt-96 px-8 ">
-          <h1 class="pt-20 text-white font-bold text-5xl">ABC 234</h1>
+      <div class="md:flex hidden min-h-screen">
+        <div class="bg-violet-800  w-1/2 pt-96 px-8">
+          <h1 class="pt-20  text-white font-bold text-5xl">ABC 234</h1>
           <p class="mt-6 text-white text-md">
             We are the best <br />
             web development company <br />
@@ -193,18 +193,22 @@
             alt=""
             srcset=""
           />
-          <div class="absolute -translate-x-56 translate-y-44 mt-4 text-white">
+          <div
+            class="fade-element absolute -translate-x-56 translate-y-44 mt-4 text-white"
+          >
             <h1 class="text-xl">The Next Big</h1>
-            <h1 class="text-6xl">Blockchain</h1>
+            <h1 class="fade-element text-6xl">Blockchain</h1>
             <p class="mt-2 float-right text-xl">Revolution.</p>
           </div>
           <img
-            class="w-[280px] h-[350px] -ml-48 translate-y-96"
+            class="scroll w-[280px] h-[350px] -ml-48 translate-y-96"
             src="src/22.png"
             alt=""
           />
           <img
-            class="w-[240px] h-[350px]"
+            class="scroll fade-element w-[240px] h-[350px]"
+            data-rate="-1"
+            data-direction="vertical"
             src="src/veme-app-ui-design.png"
             alt=""
             srcset=""
@@ -240,7 +244,9 @@
             alt=""
           />
           <img
-            class="w-[260px] h-[350px]"
+            class="scroll fade-element w-[260px] h-[350px]"
+            data-rate="-0.10"
+            data-direction="vertical"
             src="src/measure-total-body-weight-through-fitness-app.png"
             alt=""
             srcset=""
@@ -281,8 +287,8 @@
             alt=""
             srcset=""
           /> -->
-          <img src="src/sc3.png" class="object-cover -ml-80" alt="">
-        </div> 
+          <img src="src/sc3.png" class="object-cover -ml-80" alt="" />
+        </div>
 
         <button
           class="fixed z-90 bottom-10 right-8 bg-blue-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
@@ -347,8 +353,9 @@
     </div>
     <script src="script.js"></script>
     <script src="glider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-      
       new Glider(document.querySelector(".glider"), {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -359,9 +366,19 @@
         scrollLock: true,
         autoplay: true,
         scrollPropagate: true,
-        duration: 0.5, // Adjust the duration as needed
-        autoplay: 1000, // Adjust the autoplay interval as needed
+        duration: 0.5,
+        autoplay: 1000,
       });
+
+      var index = 0;
+      var buttons = document.querySelectorAll("#dots button[data-index]");
+
+      function clickNextButton() {
+        buttons[index].click();
+        index = (index + 1) % buttons.length;
+      }
+
+      setInterval(clickNextButton, 2000); // 2000 milliseconds = 2 seconds
     </script>
   </body>
 </html>

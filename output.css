@@ -71,6 +71,10 @@ body {
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+.fade-element {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
 
 hr {
   height: 0;
